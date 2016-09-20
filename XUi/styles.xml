@@ -473,6 +473,14 @@
 		<style_entry name="anchor" value="CenterTop"/>
 	</style>
 	
+	<style name="compass.window.indicator" type="sprite">
+		<style_entry name="depth" value="10"/>
+		<style_entry name="color" value="200,200,0,100"/>
+		<style_entry name="pos" value="195,-5"/>
+		<style_entry name="width" value="10"/>
+		<style_entry name="height" value="33"/>
+	</style>
+	
 	<style name="compass.window.background.border" type="sprite">
 		<style_entry name="depth" value="0"/>
 		<style_entry name="sprite" value="ui_game_header_fill"/>
