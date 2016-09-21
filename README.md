@@ -5,7 +5,7 @@ Some additions to the basic UI, adding food, water, xp bars and Temperature / El
 Also adds an compass center indicator.
 
 ## Screenshot
-...coming soon...
+![alt text](http://xui.omega-zirkel.de/screen001.png "XUI Screenshot #1")
 
 ## Installation Information
 The current master is ONLY for Alpha 15, dont try to use with a lower Alpha version.
