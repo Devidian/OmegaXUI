@@ -50,6 +50,32 @@
 		<style_entry name="remove_waypoint" 	value="/UI/ui_waypoint_delete"/>
 	</global>
 	
+	<!--OMEGA XUI-->
+	<style name="oxui.border" type="sprite">
+		<style_entry name="name"	value="border"/>
+		<style_entry name="depth" value="1"/>
+		<style_entry name="color" value="0,0,0,150"/>
+		<style_entry name="type" value="sliced"/>
+	</style>
+	
+	<style name="oxui.bg.stats" type="sprite">
+		<style_entry name="name"	value="background"/>
+		<style_entry name="depth" value="2"/>
+		<style_entry name="color" value="64,64,64,100"/>
+		<style_entry name="type" value="sliced"/>
+		<style_entry name="height" value="28"/>
+		<style_entry name="pos" value="2,-2"/>
+	</style>
+	
+	<style name="oxui.fg.stats" type="sprite">
+		<style_entry name="name"	value="BarContent"/>
+		<style_entry name="depth" value="3"/>
+		<style_entry name="type" value="filled"/>
+		<style_entry name="height" value="28"/>
+		<style_entry name="pos" value="2,-2"/>
+		<style_entry name="fill" value="0"/>
+	</style>
+	
 	<!--LABELS-->
 	<style type="label">
 		<style_entry name="color" value="[labelColor]"/>
