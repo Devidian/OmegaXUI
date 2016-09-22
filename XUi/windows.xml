@@ -52,9 +52,13 @@
 			</panel>
 		</rect>
 		
-		<rect name="hud" depth="3" pos="156,66" height="64" controller="MapStats" pivot="BottomLeft">
-			<label depth="2" name="elevLabel" pos="0,-3" width="172" height="32" text="{mapelevationtitle}: [DECEA3]{mapelevation} M[-]" font_size="26"/>
-			<label depth="2" name="tempLabel" pos="0,-35" width="172" height="32" text="{playercoretemptitle}: [DECEA3]{playercoretemp}[-]" font_size="26"/>
+		<rect name="hud" depth="3" pos="156,98" height="96" width="100" controller="PlayerStatsWindow" pivot="BottomLeft" backgroundcolor="[red]">
+			<sprite depth="2" name="Icon" size="26,26" pos="8,-3"  foregroundlayer="true" sprite="ui_game_symbol_zombie"/>
+			<sprite depth="2" name="Icon" size="26,26" pos="8,-35" foregroundlayer="true" sprite="ui_game_symbol_climb"/>
+			<sprite depth="2" name="Icon" size="26,26" pos="8,-67" foregroundlayer="true" sprite="ui_game_symbol_temperature"/>
+			<label depth="3" name="zKillsLabel" pos="0,-3"  justify="right" height="32" font_size="26" text=" [DECEA3]{playerzombiekills}[-]"/>
+			<label depth="3" name="elevLabel"   pos="0,-35" justify="right" height="32" font_size="26" text=" [DECEA3]{mapelevation} M[-]" controller="MapStats"/>
+			<label depth="3" name="tempLabel"   pos="0,-67" justify="right" height="32" font_size="26" text=" [DECEA3]{playercoretemp}[-]"/>
 		</rect>
 		
 	</window>
