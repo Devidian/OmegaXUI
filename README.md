@@ -24,3 +24,7 @@ git pull
 You can now remove the OmegaXUI directory if you like, just type (if you are still in Config dir) `rm -R ../OmegaXUI/`. 
 In case of an update you just need to `git pull` in the Config dir.
 In case of an TFP update you may first execute `git reset --hard` before you pull.
+
+## Other credits
+###StompyNZ for RWG Preview Enhancements
+![alt text](http://xui.omega-zirkel.de/rwgpreviewer.jpg "RWG Preview Enhancements")

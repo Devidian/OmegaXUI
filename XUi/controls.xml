@@ -12,6 +12,24 @@
 			</rect>
 		</rect>
 	</slider>
+	
+	<seed_text>
+		<panel depth="1" controller="TextInput" pos="50,0" width="140" height="20" value="SEARCH"
+			active_text_color="[white]" caret_color="[white]" selection_color="[mediumGrey_half_alpha]" 
+			character_limit="32" validation="none" backgroundcolor="[black]">
+			<sprite depth="0" name="background" color="[black]" type="sliced"/>
+			<label depth="1" name="text" pos="0,-2" justify="center" pivot="topleft" upper_case="false"/>
+		</panel>
+	</seed_text>
+	
+	<preview_size>
+		<panel depth="1" controller="TextInput" pos="60,0" width="40" height="20" value="SEARCH"
+			active_text_color="[white]" caret_color="[white]" selection_color="[mediumGrey_half_alpha]" 
+			character_limit="1" validation="integer" backgroundcolor="[black]">
+			<sprite depth="0" name="background" color="[black]" type="sliced"/>
+			<label depth="1" name="text" pos="0,-2" justify="center" pivot="topleft" upper_case="false"/>
+		</panel>
+	</preview_size>
 
 	<color_picker>
 		<rect controller="ColorPicker">

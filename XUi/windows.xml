@@ -1973,20 +1973,6 @@
 			</rect>
 		</rect>
 	</window>
-
-	<!--
-	<window name="windowRWGPreview" width="840" height="702" panel="Center">
-		<panel name="header" pos="0,0" height="43" width="840" depth="1" backgroundspritename="ui_game_panel_header" bordercolor="[black]" borderthickness="3">
-			<label style="header.name" text="PREVIEW" text_key="xuiPreview" />
-		</panel>
-		<panel pos="0,-46" size="840,702" depth="2" backgroundcolor="[darkGrey]" bordercolor="[black]" borderthickness="3" style="hover, press, scroll, drag" controller="WorldGenerationPreviewWindow">
-			<button name="reload" depth="101" pos="800,-6" sprite="server_refresh" style="icon32px,press,hover" tooltip="Reload Data" tooltip_key="lblReloadArchetypeXML" />
-			<texture depth="100" name="worldPreview" material="Materials/Transparent Colored" size="840,702" globalopacity="false"/>
-			<text_area/>
-			
-		</panel>
-	</window>
-	-->
 	
 	<window name="serviceInfoPanel" width="603" height="427" controller="ServiceInfoWindow" panel="Center">
 		<panel name="header" height="43" depth="1" backgroundspritename="ui_game_panel_header">
@@ -2029,24 +2015,54 @@
 		</rect>
 	</window>
 	
-	<window name="windowRWGPreview" width="840" height="702" panel="Center">
-		<panel name="header" pos="0,0" height="43" width="840" depth="1" backgroundspritename="ui_game_panel_header" bordercolor="[black]" borderthickness="3" >
-			<label style="header.name" text="RANDOM GEN WORLD PREVIEWER" />
-			<button depth="1" name="close" width="24" height="24" defaultcolor="[white]" hoversprite="ui_game_symbol_x" hovercolor="[red]" pos="805, -12" sprite="ui_game_symbol_x" hoverscale="1.0"/>
-		</panel>
-		<panel pos="0,-46" size="840,702" depth="2" backgroundcolor="[darkGrey]" bordercolor="[black]" borderthickness="3" style="hover, scroll, drag" controller="WorldGenerationPreviewWindow">
-			<label depth="104" name="Startup" text="Please press refresh or press Enter on either Seed or Size" pos="420, -336" size="840, 50" justify="center" font_size="28" color="[white]" pivot="center"/>
-			<label depth="104" name="Startup2" text="Generation of the data may take up to 2 minutes" pos="420, -366" size="840, 50" justify="center" font_size="28" color="[white]" pivot="center"/>
-			<texture depth="105" pos="6,-7" name="worldPreview" material="Materials/Transparent Colored" size="828,689" globalopacity="false"/>
-			<button depth="106" name="reload" pos="800,-6" sprite="server_refresh" style="icon32px,press,hover" tooltip="Reload Data" tooltip_key="lblReloadArchetypeXML" />
-			<rect depth="106">
-				<recipe_search name="seedInput" tooltip="Seed"/>
-				<label depth="108" text="Seed" pos="168, -8" name="TextContent" font_size="28" color="[white]"/>
-			</rect>
-			<rect depth="106" pos="0,-46">
-				<recipe_search name="worldSizeInput" tooltip="Size (1-5)"/>
-				<label depth="108" text="Size (1-5)" pos="168, -8" name="TextContent" font_size="28" color="[white]"/>
-			</rect>
-		</panel>
-	</window>
+	<!-- improved by StompyNZ -->
+  <window name="windowRWGPreview" width="1400" height="900" panel="Center">
+    <panel name="header" pos="0,0" height="43" width="1400" depth="1" backgroundspritename="ui_game_panel_header" bordercolor="[black]" borderthickness="1" >
+      <label style="header.name" text="RANDOM GEN WORLD PREVIEWER" />
+      <button depth="1" name="close" width="24" height="24" defaultcolor="[white]" hoversprite="ui_game_symbol_x" hovercolor="[red]" pos="1360, -12" sprite="ui_game_symbol_x" hoverscale="1.0"/>
+    </panel>
+    <panel pos="0,-46" size="1400,857" depth="2" backgroundcolor="[darkGrey]" bordercolor="[black]" borderthickness="1" style="hover, scroll, drag" controller="WorldGenerationPreviewWindow">
+      <label depth="104" name="Startup" text="Please press refresh or press Enter on either Seed or Size" pos="420, -336" size="840, 50" justify="center" font_size="28" color="[white]" pivot="center"/>
+      <label depth="104" name="Startup2" text="Generation of the data may take up to 2 minutes" pos="420, -366" size="840, 50" justify="center" font_size="28" color="[white]" pivot="center"/>
+      <texture depth="105" pos="6,-7" name="worldPreview" material="Materials/Transparent Colored" size="1388,843" globalopacity="false"/>
+      <panel pos="1040,-10" size="300,20" depth="106" backgroundcolor="[darkGrey]">
+        <rect depth="108" pos="0,0">
+          <label depth="110" text="Seed:" pos="1,-1" name="TextContent" font_size="18" color="[white]"/>
+          <seed_text depth="110" name="seedInput" tooltip="Seed"/>
+        </rect>
+        <rect depth="108" pos="200,0">
+          <label depth="110" text="Size (1-5):" pos="1,-1" name="TextContent" font_size="18" color="[white]"/>
+          <preview_size depth="110" name="worldSizeInput" tooltip="Size (1-5)"/>
+        </rect>
+      </panel>
+      <button depth="108" name="reload" pos="1354,-2" sprite="server_refresh" style="icon32px,press,hover" hoversprite="server_refresh"  hovercolor="[red]" hoverscale="1.0" tooltip="Reload Data" tooltip_key="lblReloadArchetypeXML" />
+      <rect depth="106" pos="1280,-46" >
+        <panel name="key_header" pos="0,0" height="20" width="110" depth="108" backgroundspritename="ui_game_panel_header">
+          <label depth="110" text="Biome Key" pos="3,-3" name="TextContent" font_size="18" color="[white]"/>
+        </panel>
+        <panel pos="0,-20" size="110,173" depth="108" backgroundcolor="[mediumGrey]">
+          <panel pos="0,-1" size="16,16" depth="110" backgroundcolor="[biome_burnt_forest]"/>
+          <label depth="110" text="Burnt Forest" pos="20,-1" name="TextContent" font_size="18" color="[biome_burnt_forest]"/>
+          <panel pos="0,-18" size="16,16" depth="110" backgroundcolor="[biome_desert]"/>
+          <label depth="110" text="Desert" pos="20,-18" name="TextContent" font_size="18" color="[biome_desert]"/>
+          <panel pos="0,-35" size="16,16" depth="110" backgroundcolor="[biome_forest]"/>
+          <label depth="110" text="Forest" pos="20,-35" name="TextContent" font_size="18" color="[biome_forest]"/>
+          <panel pos="0,-52" size="16,16" depth="110" backgroundcolor="[biome_pine_forest]"/>
+          <label depth="110" text="Pine Forest" pos="20,-52" name="TextContent" font_size="18" color="[biome_pine_forest]"/>
+          <panel pos="0,-69" size="16,16" depth="110" backgroundcolor="[biome_plains]"/>
+          <label depth="110" text="Plains" pos="20,-69" name="TextContent" font_size="18" color="[biome_plains]"/>
+          <panel pos="0,-86" size="16,16" depth="110" backgroundcolor="[biome_radiated]"/>
+          <label depth="110" text="Radiated" pos="20,-86" name="TextContent" font_size="18" color="[biome_radiated]"/>
+          <panel pos="0,-103" size="16,16" depth="110" backgroundcolor="[biome_snow]"/>
+          <label depth="110" text="Snow" pos="20,-103" name="TextContent" font_size="18" color="[biome_snow]"/>
+          <panel pos="0,-120" size="16,16" depth="110" backgroundcolor="[biome_wasteland]"/>
+          <label depth="110" text="Wasteland" pos="20,-120" name="TextContent" font_size="18" color="[biome_wasteland]"/>
+          <panel pos="0,-137" size="16,16" depth="110" backgroundcolor="[biome_wasteland_hub]"/>
+          <label depth="110" text="Wasteland Hub" pos="20,-137" name="TextContent" font_size="18" color="[biome_wasteland_hub]"/>
+          <panel pos="0,-154" size="16,16" depth="110" backgroundcolor="[biome_water]"/>
+          <label depth="110" text="Water" pos="20,-154" name="TextContent" font_size="18" color="[biome_water]"/>
+        </panel>
+      </rect>
+    </panel>
+  </window>
 </windows>

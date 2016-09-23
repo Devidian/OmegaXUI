@@ -48,6 +48,19 @@
 		<style_entry name="pickup_click" 	value="/Crafting/craft_take_item"/>
 		<style_entry name="place_click" 	value="/Crafting/craft_place_item"/>
 		<style_entry name="remove_waypoint" 	value="/UI/ui_waypoint_delete"/>
+		
+		<!-- Biome Colours @StompyNZ -->
+		<style_entry name="biome_burnt_forest" value="186,0,255"/>
+		<style_entry name="biome_desert" value="255,225,119"/>
+		<style_entry name="biome_forest" value="0,141,0"/>
+		<style_entry name="biome_pine_forest" value="0,64,0"/>
+		<style_entry name="biome_plains" value="0,255,0"/>
+		<style_entry name="biome_radiated" value="255,0,0"/>
+		<style_entry name="biome_snow" value="255,255,255"/>
+		<style_entry name="biome_wasteland" value="255,168,0"/>
+		<style_entry name="biome_wasteland_hub" value="160,160,160"/>
+		<style_entry name="biome_water" value="0,99,255"/>
+		
 	</global>
 	
 	<!--OMEGA XUI-->
