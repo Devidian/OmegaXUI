@@ -75,6 +75,13 @@
 		<style_entry name="pos" value="2,-2"/>
 		<style_entry name="fill" value="0"/>
 	</style>
+		
+	<style name="oxui.invisible">
+		<style_entry name="pos" value="0,-0"/>
+		<style_entry name="height" value="0"/>
+		<style_entry name="width" value="0"/>
+		<style_entry name="color" value="0,0,0,0"/>
+	</style>
 	
 	<!--LABELS-->
 	<style type="label">

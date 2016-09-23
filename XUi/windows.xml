@@ -150,6 +150,23 @@
 		</sprite>
 	</window>
 	
+	<window name="oxuiExperimental" anchor="LeftTop">
+		<rect controller="MapArea">
+			<sprite name="playerIcon"				style="oxui.invisible"/>
+			<sprite name="bedrollIcon"			style="oxui.invisible"/>
+			<sprite name="cursorIcon"				style="oxui.invisible"/>
+			<sprite name="waypointIcon"			style="oxui.invisible"/>
+			<label depth="2" name="playerPos" pos="10,-3" width="200" height="26" text="110 S" font_size="26" color="222,206,163" justify="left" effect="outline"/>
+			<label name="bedrollPos"				style="oxui.invisible"/>
+			<label name="cursorPos"					style="oxui.invisible"/>
+			<label name="waypointDistance"	style="oxui.invisible"/>				
+			<panel name="mapView" style="oxui.invisible" pos="-1900,0">
+				<texture name="mapViewTexture" style="oxui.invisible" material="Materials/Transparent Colored" />				
+				<panel name="clippingPanel" style="oxui.invisible"/>
+			</panel>
+		</rect>
+	</window>
+	
 	<window name="windowCraftingList"  width="397" height="688" controller="CraftingListInfo" panel="Left">
 		
 		<panel name="header" height="43" depth="1" backgroundspritename="ui_game_panel_header">
@@ -612,7 +629,7 @@
 		</rect>
 	</window>
 	
-	<window name="windowToolbelt" width="603" height="78" depth="5" anchor="CenterBottom" pos="-313, 87" backgroundcolor="[black]" controller="ToolbeltWindow" visible="{toolbeltvisible}">		
+	<window name="windowToolbelt" width="603" height="78" depth="5" anchor="CenterBottom" pos="-313, 87" backgroundcolor="[black]" controller="ToolbeltWindow" visible="{toolbeltvisible}">
 		<rect>
 			<!--sprite depth="8" name="backgroundMain" sprite="menu_empty3px" color="[black]" type="sliced" fillcenter="false" on_press="true" /-->	
 			<grid depth="1" name="inventory" rows="1" cols="8" pos="3,-3" cell_width="75" cell_height="75" controller="Toolbelt" repeat_content="true">
