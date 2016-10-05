@@ -1,4 +1,79 @@
 <windows>
+	
+	<!-- Omega XUI Style 1 START -->
+	<window name="OXUIStatFrameSimple" width="239" height="160">
+		<texture style="oxui.style1.bg"/>
+		<!-- left side: Stamina, Health, Level, Kills -->
+		<rect style="oxui.size.a" pos="32,154" controller="HUDStatBar" stat_type="Stamina" visible="{statvisible}">
+			<sprite style="oxui.style1.bar" color="255,237,33,100" />
+			<label style="oxui.style1.textBar" text="{statcurrent}%"/>
+		</rect>
+		<rect style="oxui.size.a" pos="32,114" controller="HUDStatBar" stat_type="Health" visible="{statvisible}">
+			<sprite style="oxui.style1.bar" color="196,0,0,100" />
+			<label style="oxui.style1.textBar" text="{statcurrent}%"/>
+		</rect>
+		<rect style="oxui.size.a" pos="32,74" controller="PlayerStatsWindow">
+			<sprite style="oxui.style1.bar" color="49,91,203" fill="{playerlevelfill}" />
+			<label style="oxui.style1.textBar" text="{playerleveltitle}: [DECEA3]{playerlevel}[-]" />
+		</rect>
+		<rect style="oxui.size.a" pos="32,34" controller="PlayerStatsWindow">
+			<label style="oxui.style1.textA" name="zKillsLabel" text=" [DECEA3]{playerzombiekills}[-]"/>
+		</rect>
+		<!-- right side: water, food temp, elevation -->
+		<rect style="oxui.size.b" pos="164,154" controller="HUDStatBar" stat_type="Water" visible="{statvisible}">
+			<sprite style="oxui.style1.bar" width="65" color="50,41,224,100" />
+			<label style="oxui.style1.textBar" text="{statcurrent}%"/>
+		</rect>
+		<rect style="oxui.size.b" pos="164,114" controller="HUDStatBar" stat_type="Food" visible="{statvisible}">
+			<sprite style="oxui.style1.bar" width="65" color="67,183,32,100" />
+			<label style="oxui.style1.textBar" text="{statcurrent}%"/>
+		</rect>
+		<rect style="oxui.size.b" pos="164,74" controller="PlayerStatsWindow">
+			<label style="oxui.style1.textA" name="tempLabel" text=" [DECEA3]{playercoretemp}[-]"/>
+		</rect>
+		<rect style="oxui.size.b" pos="164,34" controller="MapStats">
+			<label style="oxui.style1.textA" name="elevLabel" text=" [DECEA3]{mapelevation} M[-]"/>
+		</rect>
+	</window>
+	<!-- Omega XUI Style 1 END -->
+	
+	<!-- Omega XUI Style 2 START -->
+	<window name="OXUIStatFrameStyle2" width="340" height="128">
+		<texture style="oxui.style2.bg1"/>
+		
+		<rect height="128" width="128" pos="0,128" controller="HUDStatBar" stat_type="Stamina" visible="{statvisible}">
+			<sprite style="oxui.style2.radialA" color="255,237,33,100" filldirection="radial360" atlas="ItemIconAtlas" sprite="noneyet" />
+		</rect>
+		
+		<rect height="76" width="76" pos="26,102" controller="HUDStatBar" stat_type="Health" visible="{statvisible}">
+			<sprite style="oxui.style2.radialB" color="[black]" type="simple" filldirection="radial360" atlas="ItemIconAtlas" sprite="noneyet" />
+			<sprite style="oxui.style2.radialB" depth="2" color="196,0,0,100" filldirection="radial360" atlas="ItemIconAtlas" sprite="noneyet" />
+		</rect>
+		
+		<rect style="oxui.style2.size.barV" pos="137,69" controller="HUDStatBar" stat_type="Food" visible="{statvisible}">
+			<sprite style="oxui.style2.bar" color="67,183,32,100" />
+		</rect>
+		<rect style="oxui.style2.size.barV" pos="169,69" controller="HUDStatBar" stat_type="Water" visible="{statvisible}">
+			<sprite style="oxui.style2.bar" color="50,41,224,100" />
+		</rect>
+		<rect style="oxui.style2.size.barV" pos="201,69" controller="PlayerStatsWindow">
+			<sprite style="oxui.style2.bar" color="49,91,203" fill="{playerlevelfill}" />
+		</rect>
+		
+		
+		<rect style="oxui.style2.size.statH" pos="257,93" controller="PlayerStatsWindow">
+			<label style="oxui.style2.textA" name="zKillsLabel" text=" [DECEA3]{playerzombiekills}[-]"/>
+		</rect>
+		<rect style="oxui.style2.size.statH" pos="257,61" controller="PlayerStatsWindow">
+			<label style="oxui.style2.textA" name="tempLabel" text=" [DECEA3]{playercoretemp}[-]"/>
+		</rect>
+		<rect style="oxui.style2.size.statH" pos="257,29" controller="MapStats">
+			<label style="oxui.style2.textA" name="elevLabel" text=" [DECEA3]{mapelevation} M[-]"/>
+		</rect>
+		
+	</window>
+	<!-- Omega XUI Style 2 END -->
+	
 	<window name="HUDLeftStatBars">
 		<grid name="hud" pos="2,130" rows="4" cols="1" width="150" cell_width="150" cell_height="32" repeat_content="false" side="left" >
 			<rect height="32" controller="HUDStatBar" stat_type="Stamina" visible="{statvisible}">
@@ -60,7 +135,6 @@
 			<label depth="3" name="elevLabel"   pos="0,-35" justify="right" height="32" font_size="26" text=" [DECEA3]{mapelevation} M[-]" controller="MapStats"/>
 			<label depth="3" name="tempLabel"   pos="0,-67" justify="right" height="32" font_size="26" text=" [DECEA3]{playercoretemp}[-]"/>
 		</rect>
-		
 	</window>
 	
 	<window name="HUDRightStatBars">
