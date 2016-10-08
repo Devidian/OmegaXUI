@@ -37,7 +37,7 @@
 			<label style="oxui.style1.textA" name="elevLabel" text=" [DECEA3]{mapelevation} M[-]"/>
 		</rect>
 		<!-- Buff Frame -->
-		<rect name="hud" pos="2,165" side="left" controller="BuffPopoutList" pivot="BottomLeft" >
+		<rect name="hud" pos="2,180" side="left" controller="BuffPopoutList" pivot="BottomLeft" >
 			<panel width="150" height="32" name="item" visible="false" pivot="right" disableautobackground="true" pos="0, 0" >
 				<sprite depth="3" pos="0,0"  name="Background" sprite="ui_game_popup" height="32" width="150" pivot="left" flip="Horizontally" color="[transparent]" />
 				<sprite depth="4" name="Icon" size="26,26" pos="8,0" pivot="left" color="[transparent]"/>
