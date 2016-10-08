@@ -36,6 +36,15 @@
 		<rect style="oxui.size.b" pos="164,34" controller="MapStats">
 			<label style="oxui.style1.textA" name="elevLabel" text=" [DECEA3]{mapelevation} M[-]"/>
 		</rect>
+		<!-- Buff Frame -->
+		<rect name="hud" pos="2,165" side="left" controller="BuffPopoutList" pivot="BottomLeft" >
+			<panel width="150" height="32" name="item" visible="false" pivot="right" disableautobackground="true" pos="0, 0" >
+				<sprite depth="3" pos="0,0"  name="Background" sprite="ui_game_popup" height="32" width="150" pivot="left" flip="Horizontally" color="[transparent]" />
+				<sprite depth="4" name="Icon" size="26,26" pos="8,0" pivot="left" color="[transparent]"/>
+				<label depth="6" name="TextContent" pos="0,0" font_size="26" color="[white]" justify="center" pivot="left"/>
+			</panel>
+		</rect>
+		
 	</window>
 	<!-- Omega XUI Style 1 END -->
 	
