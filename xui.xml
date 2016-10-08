@@ -104,8 +104,8 @@
 		
 		<window_group name="toolbelt">
 			<window name="windowToolbelt" anchor="CenterBottom" />
-			<window name="HUDLeftStatBars" anchor="LeftBottom" />
-			<!--window name="OXUIStatFrameSimple" anchor="LeftBottom" /-->
+			<!--window name="HUDLeftStatBars" anchor="LeftBottom" /-->
+			<window name="OXUIStatFrameStyle1" anchor="LeftBottom" />
 			<!--window name="OXUIStatFrameStyle2" anchor="LeftBottom" /-->
 			<window name="HUDRightStatBars" anchor="RightBottom" />
 			<window name="windowQuestTracker" anchor="RightTop" />

@@ -1,8 +1,10 @@
 <windows>
 	
 	<!-- Omega XUI Style 1 START -->
-	<window name="OXUIStatFrameSimple" width="239" height="160">
+	<window name="OXUIStatFrameStyle1" width="239" height="160">
 		<texture style="oxui.style1.bg"/>
+		<!--texture style="oxui.style1.overlay"/-->
+		<texture style="oxui.style1.icons"/>
 		<!-- left side: Stamina, Health, Level, Kills -->
 		<rect style="oxui.size.a" pos="32,154" controller="HUDStatBar" stat_type="Stamina" visible="{statvisible}">
 			<sprite style="oxui.style1.bar" color="255,237,33,100" />

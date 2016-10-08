@@ -98,6 +98,23 @@
 		<style_entry name="pos" value="0,160"/>
 		<style_entry name="material" value="Materials/Transparent Colored"/>
 	</style>
+	<style name="oxui.style1.overlay">
+		<style_entry name="depth" value="10"/>
+		<style_entry name="texture" value="@http://xui.omega-zirkel.de/style1_overlay_01.png"/> <!-- [local|@file:Data\Config\assets\style1_overlay_01.png] [www|@http://xui.omega-zirkel.de/style1_overlay_01.png]-->
+		<!--style_entry name="texture" value="@http://xui.omega-zirkel.de/style1_overlay_02.png"/--> <!-- [local|@file:Data\Config\assets\style1_overlay_02.png] [www|@http://xui.omega-zirkel.de/style1_overlay_02.png]-->
+		<style_entry name="type" value="sliced"/>
+		<style_entry name="size" value="239,160"/>
+		<style_entry name="pos" value="0,160"/>
+		<style_entry name="material" value="Materials/Transparent Colored"/>
+	</style>
+	<style name="oxui.style1.icons">
+		<style_entry name="depth" value="11"/>
+		<style_entry name="texture" value="@http://xui.omega-zirkel.de/style1_icons_01.png"/> <!-- [local|@file:Data\Config\assets\style1_icons_01.png] [www|@http://xui.omega-zirkel.de/style1_icons_01.png]-->
+		<style_entry name="type" value="sliced"/>
+		<style_entry name="size" value="239,160"/>
+		<style_entry name="pos" value="0,160"/>
+		<style_entry name="material" value="Materials/Transparent Colored"/>
+	</style>
 	<style name="oxui.style1.bar" type="sprite">
 		<style_entry name="name"	value="BarContent"/>
 		<style_entry name="depth" value="1"/>
