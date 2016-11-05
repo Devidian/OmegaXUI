@@ -82,7 +82,7 @@
 		
 		<window_group name="compass">
 			<window name="windowCompass" />
-			<window name="oxuiExperimental" />
+			<!--window name="oxuiExperimental" /-->
 		</window_group>
 		
 		<window_group name="toolTip">
