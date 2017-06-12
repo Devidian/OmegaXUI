@@ -38,5 +38,5 @@ just download the files from github and copy them to your Config folder
 
 
 ## Other credits
-###StompyNZ for RWG Preview Enhancements
+###StompyNZ for RWG Preview Enhancements (removed in A16.0+ due to update from TFP)
 ![alt text](http://xui.omega-zirkel.de/rwgpreviewer.jpg "RWG Preview Enhancements")
