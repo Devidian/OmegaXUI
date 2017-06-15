@@ -165,7 +165,7 @@
 	<skill_action_entry>
 		<rect height="43" controller="ItemActionEntry" disabled_font_color="[disabledLabelColor]" default_font_color="[labelColor]" default_background_color="[mediumGrey]" >
 			<sprite depth="3" name="background" color="[mediumGrey]" type="sliced" on_press="true" on_hover="true" />
-			<sprite depth="4" name="Icon" sprite="{actionicon}" size="24,24" color="{statuscolor}" pos="8,-10" foregroundlayer="true"/>
+			<sprite depth="4" name="Icon" sprite="{actionicon}" size="24,24" color="{statuscolor}" pos="2,-10" foregroundlayer="true"/>
 			<label depth="4" name="Name" pos="32,-22" width="78" height="26" text="{actionname}" font_size="26" color="{statuscolor}" effect="shadow" pivot="left" />
 			<!--#$-IGS BEGIN: Adding gamepad callout . -$#-->
 			<gamepad_icon depth="4" name="gamepadIcon" pos="145,-22" pivot="Right" />

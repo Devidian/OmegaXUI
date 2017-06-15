@@ -1,5 +1,5 @@
 <windows>
-	
+
 	<!-- Omega XUI Style 1 START -->
 	<window name="OXUIStatFrameStyle1" width="239" height="160">
 		<texture style="oxui.style1.bg"/>
@@ -234,6 +234,7 @@
 	<window name="windowCompass" style="compass.window" controller="CompassWindow">
 		<sprite style="compass.window.background.border"/>
 		<sprite style="compass.window.background"/>
+		<!-- Compass indicator added by OmegaXUI -->
 		<sprite style="compass.window.indicator"/>
 		<sprite style="compass.window.compass.background"></sprite>
 		<texture style="compass.window.compass.texture" name="compassTexture" rect_size="0.25,1" rect_offset=".8,0" ></texture>
@@ -1591,9 +1592,11 @@
 				<sprite depth="1" pos="-3,8" width="151" height="91" name="background" color="[mediumGrey]" type="sliced"/> 
 				<grid rows="2" cols="1" pos="0,5" width="144" cell_width="144" cell_height="43" controller="ItemActionList">
 					<skill_action_entry />
-					<skill_action_entry /> 
+					<!-- <skill_action_entry />  -->
 				</grid>
 				<sprite depth="8" name="backgroundMain" sprite="menu_empty3px" pos="-3,8" width="151" height="91" color="[black]" type="sliced" fillcenter="false" />
+				<sprite depth="3" pos="75,-59" width="150" height="43" color="[mediumGrey]" pivot="center" type="sliced" />
+				<label depth="8" pos="75,-59" width="150" height="43" text="{buycost}" pivot="center" justify="center" />
 			</panel>
 			<rect depth="1" pos="148,0" width="454" height="234" >
 				<sprite depth="1" name="background" color="[mediumGrey]" type="sliced"/> 
