@@ -112,7 +112,7 @@
 					<!--sprite depth="4" name="Icon" atlas="{staticonatlas|once}" sprite="{staticon|once}" size="12,12" pos="8,-3" foregroundlayer="true"/-->
 					<label depth="6" name="TextContent" pos="0,-3" font_size="26" color="[white]" justify="center" pivot="topleft" text="{statcurrent}%"/>
 				</rect>
-			  <!-- Water Bar -->
+			  	<!-- Water Bar -->
 				<rect height="32" width="75" controller="HUDStatBar" stat_type="Water" visible="{statvisible}">
 					<sprite style="oxui.border" />
 					<sprite style="oxui.bg.stats" width="71" />

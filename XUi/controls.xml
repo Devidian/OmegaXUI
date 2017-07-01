@@ -205,7 +205,7 @@
 				<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,2" width="71" height="47" color="[black]" type="sliced" fillcenter="false" />	
 			
 				<sprite color="[lightGrey]" type="sliced" />
-				<sprite depth="2" name="icon" width="56" height="40" atlas="ItemIconAtlas" sprite="{itemicon}" pos="30,-20" pivot="center" foregroundlayer="true"/>
+				<sprite depth="2" name="icon" width="56" height="40" atlas="ItemIconAtlas" sprite="{itemicon}" color="{itemicontint}" pos="30,-20" pivot="center" foregroundlayer="true"/>
 			</rect>
 			<rect depth="2" width="236" height="43" pos="68,0">
 				<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,2" width="242" height="47" color="[black]" type="sliced" fillcenter="false" />	
