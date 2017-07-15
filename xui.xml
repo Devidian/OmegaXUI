@@ -210,7 +210,7 @@
 			
 		</window_group>
 		
-		<window_group name="powercamera" controller="XUiC_PowerCameraWindowGroup">
+		<window_group name="powercamera" controller="XUiC_PowerCameraWindowGroup" actionSet="controller">
 			<window name="windowPowerCameraControl" />
 			<window name="windowNonPagingHeader" />
 		</window_group>

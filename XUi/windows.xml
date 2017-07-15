@@ -2045,7 +2045,7 @@
 		<panel name="header" height="43" depth="1" backgroundspritename="ui_game_panel_header">
 			<sprite pos="4,-5" depth="2" name="windowIcon" style="icon32px" sprite="ui_game_symbol_map_trader"/>
 			<label style="header.name" size="350,32"/>
-			<label depth="2" pos="340,-8" width="300" height="28" text="{restocklabel} {timeleft}" color="[lightGrey]" justify="right" visible="{showrestock}" />
+			<label depth="2" pos="340,-8" width="300" height="28" text="{restocklabel}: {timeleft}" color="[lightGrey]" justify="right" visible="{showrestock}" />
 
 			<label pos="600, -6" depth="2" name="availableMoney" width="64" height="32" text="{availablemoney}" font_size="32" color="[lightGrey]" justify="right" pivot="topright" visible="{isowner}"/>
 			<sprite pos="638, -5" depth="2" name="coinIcon" style="icon32px" sprite="ui_game_symbol_coin" color="[lightGrey]" pivot="topright" visible="{isowner}"/>
@@ -2123,27 +2123,6 @@
 			</grid>
 		</panel>
 	</window>
-
-	<!--<window name="windowRespondentName" anchor="CenterCenter">
-		<rect pivot="left">
-			<sprite pos="4,-5" depth="2" name="windowIcon" style="icon32px" sprite="ui_game_symbol_map_trader"/>
-			<label style="header.name" text="TRADER JOEL" width="300" />
-		</rect>
-	</window>
-
-	<window name="windowStatement" pos="0,85" width="1000" height="60" anchor="CenterBottom" controller="DialogStatementWindow">
-		<rect name="content" depth="1" pivot="center">
-			<sprite depth="1" name="backgroundSprite" pos="-500,-5" color="25,25,25,150" />
-			<label depth="3" name="statementLabel" pos="-500,-5" text="{statement}" font_size="30" overflow="resizeheight" justify="center"/>
-		</rect>
-	</window>
-
-	<window name="windowResponses" pos="-650,0" width="600" height="240" anchor="RightCenter">
-		<sprite depth="1" name="background" sprite="ui_game_text_body_back" />
-		<grid name="items" pos="3,-15" rows="6" cols="1" width="590" height="200" cell_width="590" cell_height="40" repeat_content="true" arrangement="vertical" controller="DialogResponseList">
-			<response_entry id="0" />
-		</grid>
-	</window>-->
 
 	<window name="windowColorPicker" width="250" height="611" panel="Left">
 		<panel name="header" height="43" depth="1" backgroundspritename="ui_game_panel_header">
@@ -2394,7 +2373,7 @@
 
 	</window>
 
-	<window name="windowPowerSourceSlots" width="228" height="198" anchor="CenterTop" panel="Left">
+	<window name="windowPowerSourceSlots" width="228" height="198" anchor="CenterTop" panel="Left" cursor_area="true">
 		<panel style="header.panel">
 			<sprite depth="2" name="windowIcon" style="icon32px" pos="5,-5" sprite="ui_game_symbol_electric_power"/>
 			<label style="header.name" text="SLOTS" text_key="xuiSlots" />
