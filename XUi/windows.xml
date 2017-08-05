@@ -2711,6 +2711,7 @@
 				<togglebutton name="toggleDecorations" caption_key="xuiDebugMenuDecorations" width="290" height="32" depth="3" />
 				<togglebutton name="toggleEntityTasks" caption_key="xuiDebugMenuEntityTasks" width="290" height="32" depth="3" />
 				<togglebutton name="toggleLightPerformance" caption_key="xuiDebugMenuShowLightPerf" width="290" height="32" depth="3" />
+        <togglebutton name="toggleStabilityGlue" caption_key="xuiDebugMenuShowStabilityGlue" width="290" height="32" depth="3" />
 			</grid>
 
 		</panel>
