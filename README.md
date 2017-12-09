@@ -8,7 +8,7 @@ Also adds a compass center indicator.
 ![alt text](http://xui.omega-zirkel.de/screen002.jpg "XUI Screenshot #2")
 
 ## Installation & Update Information
-The current master is ONLY for Alpha 15, dont try to use with a lower Alpha version.
+The current master is ONLY for Alpha 16, dont try to use with a lower Alpha version.
 ### Linux Dedicated Server
 
 Connect to your server via ssh and go to your Data folder. This for example is when you use allocs fixes:
