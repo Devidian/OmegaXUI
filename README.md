@@ -21,7 +21,7 @@ cd /home/sdtd/engine/Mods/
 Now clone the repository, switch to the repository and pull for current master
 
 ```
-git clone https://github.com/Devidian/OmegaXUI.git OmegaXUI
+git clone https://github.com/Devidian/OmegaXUI.git --branch A17.EX
 cd OmegaXUI
 git pull
 ```
