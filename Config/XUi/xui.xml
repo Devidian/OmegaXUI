@@ -1,0 +1,6 @@
+<configs>
+	<remove xpath="/xui/ruleset[@name='default']/window_group[@name='toolbelt']/window[@name='HUDLeftStatBars']" />
+	<append xpath="/xui/ruleset[@name='default']/window_group[@name='toolbelt']">
+		<window name="OXUIStatFrameStyle1" anchor="LeftBottom" />
+	</append>
+</configs>
